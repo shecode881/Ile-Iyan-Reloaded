@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <link rel="stylesheet" href="style.css">
+            <a href="home.html"target="_blank">Home</a>
+            <a href="about us.html"target="_blank">About Us</a>
+            <a href="menu.html"target="_blank">Menu</a>
+            <a href="gallery.html"target="_blank">Gallery</a>
+            <a href="contact.html"target="_blank">Contact</a>
+            <a href="book.html" class="button">Book a Table</a>
+        </nav>
+        </header>
+<div class="book-table-page">
+        <header class="main-header">
+        </header>
+        <div class="book-image">
+        <h4 style="font-size: 20px; color:rgb(253, 249, 247);">WE LOVE TO HEAR FROM YOU</h4>
+            <h2 style="font-size: 80px; color:rgb(253, 249, 247);">BOOK  A TABLE</h2>
+    </div>
+
+        <main>
+            <div class="booking-container">
+                <h2>Book Your Table at Ile Iyan Reloaded</h2>
+                <p>Planning a delightful meal? Use our convenient booking form below to reserve your table. We look forward to welcoming you!</p>
+
+                <form action="index.html" method="GET">
+                    <div class="form-section">
+                        <h3>Your Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name <span style="color: red;">*</span></label>
+                                <input type="text" id="first-name" name="first_name" placeholder="E.g., John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name <span style="color: red;">*</span></label>
+                                <input type="text" id="last-name" name="last_name" placeholder="E.g., Doe" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email <span style="color: red;">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="E.g., your@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number <span style="color: red;">*</span></label>
+                                <input type="tel" id="phone" name="phone" placeholder="E.g., +2348012345678" pattern="[0-9]{11,15}" title="Enter a valid phone number (e.g., +2348012345678)" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="branch-location">Preferred Branch Location <span style="color: red;">*</span></label>
+                            <select id="branch-location" name="branch_location" required>
+                                <option value="">Select a Branch</option>
+                                <option value="ikeja">Ikeja Branch</option>
+                                <option value="yaba">Yaba Branch</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Reservation Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="event-date">Date <span style="color: red;">*</span></label>
+                                <input type="date" id="event-date" name="event_date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="event-time">Time <span style="color: red;">*</span></label>
+                                <input type="time" id="event-time" name="event_time" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="num-hours">Number of Hours <span style="color: red;">*</span></label>
+                                <select id="num-hours" name="num_hours" required>
+                                    <option value="">Select Duration</option>
+                                    <option value="1">1 Hour</option>
+                                    <option value="1.5">1.5 Hours</option>
+                                    <option value="2">2 Hours</option>
+                                    <option value="2.5">2.5 Hours</option>
+                                    <option value="3">3 Hours</option>
+                                    <option value="3.5">3.5 Hours</option>
+                                    <option value="4">4 Hours</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="num-guests">Number of Guests <span style="color: red;">*</span></label>
+                                <input type="number" id="num-guests" name="num_guests" placeholder="E.g., 4" min="1" max="50" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="event-type">Event Type</label>
+                            <input type="text" id="event-type" name="event_type" placeholder="E.g., Birthday, Anniversary, Casual Dinner">
+                            </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Menu Preferences & Additional Notes</h3>
+                        <div class="form-group">
+                            <label for="menu-items">Preferred Menu Items / Category</label>
+                            <select id="menu-items" name="menu_items">
+                                <option value="">Select a Preference</option>
+                                <option value="local-dishes">Agbala Lite</option>
+                                <option value="rice-pasta">GoatMeat PepperSoup</option>
+                                <option value="grilled-specials">CatFish PepperSoup</option>
+                                <option value="sea-food">Eko Akete</option>
+                                <option value="sides-drinks">Olowo Layemo</option>
+                                <option value="desserts">Arowolo</option>
+                                <option value="desserts">Sokoyokoto</option>
+                                <option value="desserts">Igbalode Lite</option>
+                                <option value="desserts">Aridunnu Platter</option>
+                                <option value="desserts">Ade Ori Okin Platter</option>
+                                <option value="desserts">Olowonla Platter</option>
+                            </select>
+                            <p style="font-size: 0.85em; color: #777; margin-top: 5px;">
+                                This helps us prepare for your visit, but is not a pre-order.
+                            </p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additional-notes">Additional Notes / Special Requests</label>
+                            <textarea id="additional-notes" name="additional_notes" rows="5" placeholder="E.g., wheelchair access, high chair needed, dietary restrictions, preferred seating area..."></textarea>
+                        </div>
+                    </div>
+
+                        <a href="home.html" class="btn view-menu-btn">Confirm & Book Table</a>
+                </form>
+            </div>
+        </main>
+
+        </div>
+    </header>
+
+    <footer class="main-footer">
+            <div class="footer-columns">
+        <div class="footer-column footer-brand">
+            <a href="index.html" class="footer-logo-link">
+                <img src="Ile iyan logo 2.png" alt="Ilye Iyan Reloaded Logo" class="footer-logo">
+            </a>
+            <p class="copyright-text">
+                &copy; <span id="current-year-footer"></span> Ile Iyan Reloaded. <br>
+                Authentic Nigerian Cuisine. All rights reserved.
+            </p>
+        </div>
+
+        <div class="footer-column footer-links">
+            <h4>QUICK LINKS</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="book.html">Book a Table</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column footer-location">
+            <h4>OUR LOCATION</h4>
+            <p>
+                29 Ayoola Coker,<br>
+                Ikeja GRA, Ikeja 100111, Lagos.<br>
+            </p>
+            <p>
+                Phone:+234 801 234 5678<br>
+                Email: <a href="mailto:info@ilyeiyanreloaded.com">info@Ileiyanreloaded.com</a>
+            </p>
+        </div>
+
+        <div class="footer-column footer-policies">
+            <h4>POLICIES</h4>
+            <ul>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="refunds.html">Refunds Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom-bar">
+        <p>&copy; <span id="current-year-bottom"></span> 2025 Ile Iyan Reloaded. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+        
+
